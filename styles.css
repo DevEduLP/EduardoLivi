@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  font-family: "Geist Mono", sans-serif;
+  background-color: #151b2b;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  gap: 28px;
+  text-align: center;
+}
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #cfcfcf;
+}
+.nav-link i {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.nav-link span {
+  position: relative;
+}
+.nav-link span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+.nav-link:hover span::after,
+.nav-link:focus-visible span::after {
+  transform: scaleX(1);
+}
+
+body {
+  background-color: #151b2b;
+}
+
+.home {
+  margin-top: 96px;
+  text-align: center;
+}
+
+.title-projects {
+  font-family: "Geist Mono", sans-serif;
+  color: #cfcfcf;
+  text-align: center;
+  align-items: center;
+  font-size: 1.6rem;
+    margin-top: 55px;
+    margin-bottom: 70px;
+}
+
+.paragraf {
+  color: #cfcfcf;
+  font-family: "Geist Mono", sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 12ch;
+  }
+}
+@keyframes caret {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+.typed-out {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #a3e635;
+  font-family: "Geist Mono", monospace;
+  font-size: 3.8rem;
+  border-right: 2px solid #a3e635;
+  width: 0ch;
+  animation: typing 1.6s steps(12, end) forwards, caret 0.8s step-end infinite;
+}
+
+#mailtoimg {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.msg-email {
+  display: flex;
+  justify-content: center;
+  color: #151b2b;
+  font-size: 15px;
+  align-items: center;
+  color: #cfcfcf;
+  border-radius: 20px;
+  font-family: "Geist Mono", sans-serif;
+}
+.destaque {
+  color: #a3e635;
+}
+
+.button-email img {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+.button-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.2rem;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: #cfcfcf;
+  color: #0b1020;
+  font-family: "Geist Mono", sans-serif;
+  margin-top: 35px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.button-email:hover {
+  background: #e7e7e7; /* leve escurecida */
+  border-color: #a3e635; /* borda neon discreta */
+  transform: translateY(-1px); /* micro “lift” */
+}
+
+.about {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 100px;
+}
+.about_title {
+  font-size: 1.6rem;
+}
+.about_photo {
+  justify-self: end;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 16px;
+  object-fit: cover;
+  display: block;
+}
+.about_text {
+  color: #cfcfcf;
+  font-family: "Geist Mono", sans-serif;
+  line-height: 3.5;
+}
+
+@media (max-width: 900px) {
+  .about {
+    grid-template-columns: 1fr; 
+    margin-top: 64px;
+  }
+  .about_photo {
+    justify-self: center; 
+    max-width: 320px;
+  }
+  .about_text {
+    text-align: center;
+    line-height: 1.7; 
+  }
+  .title-projects {
+    margin: 55px auto 12px !important;
+    text-align: center;
+    padding: 0 24px; 
+    font-family: "Geist Mono", sans-serif;
+    font-size: clamp(1.55rem, 2.4vw, 2rem);
+    margin-top: 25px;
+    margin-bottom: -95px;
+  }
+  section{
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .typed-out {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  .typed-out {
+    font-size: 2.4rem;
+  }
+}
+
+
+
+.title-projects + section{
+    gap:32px;          /* mais respiro entre cards */
+    margin-top:28px;   /* espaço entre título e grid */
+  }
+  @media (min-width:1024px){
+    .title-projects + section{ gap:40px; }
+  }
+@media (max-width: 640px) {
+  .title + section {
+    grid-template-columns: 1fr;
+  }
+  .nav-link span{
+    display: none;
+  }
+  .social{gap: 35px;}
+  .nav-link i { font-size: 22px; }
+}
+
+/* 4) Footer — empilha no mobile, lado a lado no desktop */
+@media (max-width: 768px) {
+  footer .max-w-\[1100px\].mx-auto.px-6.py-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* 5) Botão de e-mail — espaço e toque melhores no mobile */
+@media (max-width: 480px) {
+  .button-email {
+    padding: 0.8rem 1rem;
+    margin-top: 24px;
+  }
+}
