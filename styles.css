@@ -178,6 +178,31 @@ body {
   line-height: 3.5;
 }
 
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0.8rem 1.2rem;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid #a3e635;
+  background: transparent;
+  color: #a3e635;
+
+  font-family: "Geist Mono", sans-serif;
+  font-weight: 600;
+
+  transition: all 0.2s ease;
+}
+
+.cv-button:hover {
+  background: #a3e635;
+  color: #0b1020;
+  transform: translateY(-2px);
+}
+
+
 @media (max-width: 900px) {
   .about {
     grid-template-columns: 1fr; 
@@ -187,6 +212,11 @@ body {
     justify-self: center; 
     max-width: 320px;
   }
+
+  .cv-button{
+    margin-bottom: 10px;
+  }
+
   .about_text {
     text-align: center;
     line-height: 1.7; 
