@@ -2,205 +2,264 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./images/favicon.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
-    <title>Eduardo Livi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+  <title>Eduardo Livi</title>
 </head>
 
 <body>
-    <header>
-        <nav class="social">
-            <a href="https://www.instagram.com/dudu_livip/?hl=pt" class="nav-link"><i
-                    class="fa-brands fa-instagram"></i><span>Instagram</span></a>
-            <a href="https://www.linkedin.com/in/eduardo-livi-pedruzzi-4ab268235/" class="nav-link"><i
-                    class="fa-brands fa-linkedin"></i><span>Linkedin</span></a>
-            <a href="https://github.com/DevEduLP" class="nav-link"><i
-                    class="fa-brands fa-github"></i><span>GitHub</span></a>
-        </nav>
-    </header>
+  <header>
+    <nav class="social">
+      <a href="https://www.instagram.com/dudu_livip/?hl=pt" class="nav-link"><i
+          class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+      <a href="https://www.linkedin.com/in/eduardo-livi-pedruzzi-4ab268235/" class="nav-link"><i
+          class="fa-brands fa-linkedin"></i><span>Linkedin</span></a>
+      <a href="https://github.com/DevEduLP" class="nav-link"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+    </nav>
+  </header>
 
 
-    <section class="home">
-        <p class="paragraf">Oi! Eu sou o</p>
-        <h1>
-            <span class="typed-out" id="name">Eduardo Livi</span>
-        </h1>
-        <p class="mt-1 text-[#CFCFCF] text-base font-geist">
-            <span class="text-[#A3E635] font-geist">Performance</span> é o propósito e
-            <span class="text-[#A3E635] font-geist">paixão</span> é o combustível. <span>💚</span>
-          </p>
-        <a class="button-email"
-            href="mailto:edulpbs@gmail.com?subject=Contato%20pelo%20site&body=Oi%20Eduardo,%20tudo%20bem?">
-            <img src="./images/email-1.svg" alt="" aria-hidden="true">Me envie um e-mail!
+  <section class="home">
+    <p class="paragraf">Oi! Eu sou o</p>
+    <h1>
+      <span class="typed-out" id="name">Eduardo Livi</span>
+    </h1>
+    <p class="mt-1 text-[#CFCFCF] text-base font-geist">
+      <span class="text-[#A3E635] font-geist">Performance</span> é o propósito e
+      <span class="text-[#A3E635] font-geist">paixão</span> é o combustível. <span>💚</span>
+    </p>
+    <a class="button-email"
+      href="mailto:edulpbs@gmail.com?subject=Contato%20pelo%20site&body=Oi%20Eduardo,%20tudo%20bem?">
+      <img src="./images/email-1.svg" alt="" aria-hidden="true">Me envie um e-mail!
+    </a>
+
+  </section>
+
+  <section class="about">
+    <div class="about_text">
+      <h2 class="about_title">Sobre Mim:</h2>
+      <p class="paragraf-sobre">Dev front-end e músico: levo ritmo e precisão para as ideias. <br>Sou <span
+          class="destaque">otimista</span> e busco sempre evoluir constantemente.<br>
+        Desenvolvimento profissional contínuo, orientado a resultados.
+      </p>
+      <a href="./cv/Eduardo_Livi_Frontend_Developer_CV.pdf" download class="cv-button">
+        📄 Download CV
+      </a>
+    </div>
+    <img src="https://avatars.githubusercontent.com/u/101974785?v=4" alt="Minha Foto" class="about_photo">
+
+  </section>
+
+  <h2 class="title-projects">Alguns Projetos:</h2>
+
+  <section
+    class="max-w-[1100px] mx-auto my-16 px-6 grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-[#a3e635\]">
+
+    <!-- CARD -->
+    <article
+      class="grid grid-rows-[auto_1fr_auto] rounded-2xl overflow-hidden border border-[#1f2a44] bg-gradient-to-b from-[#0f1423] to-[#0c111d] transition
+                        hover:-translate-y-0.5 hover:shadow-[0_10px_28px_rgba(0,0,0,.35)] hover:border-[color:oklab(var(--tw-oklab))] -mt-6">
+      <!-- Thumb -->
+      <img src="./images/site-sagrav.png" alt="Prévia do projeto Sagrav Site" class="w-full aspect-[16/9] object-cover">
+      <!-- Corpo -->
+      <div class="p-4 pt-3">
+        <h3 class="text-[1.05rem] mb-1 font-semibold text-[#cfcfcf]">Sagrav Metal - Site</h3>
+        <p class="text-sm text-[#cfcfcf] leading-relaxed mb-3">
+          Site da banda com e-commerce, ainda está em desenvolvimento.
+        </p>
+        <ul class="flex flex-wrap gap-2 mb-3 text-[#0b1020]">
+          <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">CSS</li>
+          <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">JavaScript</li>
+          <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">E-commerce</li>
+        </ul>
+      </div>
+      <!-- Ações -->
+      <footer class="flex gap-2 border-t border-[#1f2a44] p-3">
+        <a href="https://www.sagravmetal.com" target="_blank" rel="noopener"
+          class="flex-1 text-center font-bold rounded-lg px-3 py-2 bg-[#CFCFCF] text-[#0b1020] transition hover:bg-[#E7E7E7] hover:-translate-y-0.5">
+          Ver online
+        </a>
+      </footer>
+    </article>
+    <!---------------------------------------------------------------------------------------->
+    <article
+      class="grid grid-rows-[auto_1fr_auto] rounded-2xl overflow-hidden border border-[#1f2a44] bg-gradient-to-b from-[#0f1423] to-[#0c111d] transition
+                        hover:-translate-y-0.5 hover:shadow-[0_10px_28px_rgba(0,0,0,.35)] hover:border-[color:oklab(var(--tw-oklab))] -mt-6">
+      <!-- Thumb -->
+      <img src="./images/site-gere.png" alt="Prévia do projeto Gere Blues" class="w-full aspect-[16/9] object-cover">
+      <!-- Corpo -->
+      <div class="p-4 pt-3">
+        <h3 class="text-[1.05rem] mb-1 font-semibold text-[#cfcfcf]">Gere Blues - Site</h3>
+        <p class="text-sm text-[#cfcfcf] leading-relaxed mb-3">
+          Site da banda de blues de Chapecó chamada Gere Blues, ainda está em desenvolvimento.
+        </p>
+        <ul class="flex flex-wrap gap-2 mb-3 text-[#0b1020]">
+          <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">JavaScript</li>
+          <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">CSS</li>
+          <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">HTML5</li>
+        </ul>
+      </div>
+      <!-- Ações -->
+      <footer class="flex gap-2 border-t border-[#1f2a44] p-3">
+        <a href="https://gereblues.com.br/" target="_blank" rel="noopener"
+          class="flex-1 text-center font-bold rounded-lg px-3 py-2 bg-[#CFCFCF] text-[#0b1020] transition hover:bg-[#E7E7E7] hover:-translate-y-0.5">
+          Ver online
+        </a>
+      </footer>
+    </article>
+    <!---------------------------------------------------------------------------------------->
+    <article
+      class="grid grid-rows-[auto_1fr_auto] rounded-2xl overflow-hidden border border-[#1f2a44] bg-gradient-to-b from-[#0f1423] to-[#0c111d] transition
+                        hover:-translate-y-0.5 hover:shadow-[0_10px_28px_rgba(0,0,0,.35)] hover:border-[color:oklab(var(--tw-oklab))] -mt-6">
+      <!-- Thumb -->
+      <img src="./images/site-ale.png" alt="Prévia do site Ale Castro Studio" class="w-full aspect-[16/9] object-cover">
+      <!-- Corpo -->
+      <div class="p-4 pt-3">
+        <h3 class="text-[1.05rem] mb-1 font-semibold text-[#cfcfcf]">Ale Castro Studio</h3>
+        <p class="text-sm text-[#cfcfcf] leading-relaxed mb-3">
+          Site (Landing Page) para um estúdio de beleza.
+        </p>
+        <ul class="flex flex-wrap gap-2 mb-3 text-[#0b1020]">
+          <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">CSS</li>
+          <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">JavaScript</li>
+          <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">HTML5</li>
+        </ul>
+      </div>
+      <!-- Ações -->
+      <footer class="flex gap-2 border-t border-[#1f2a44] p-3">
+        <a href="https://alecastrostudio.com.br/" target="_blank" rel="noopener"
+          class="flex-1 text-center font-bold rounded-lg px-3 py-2 bg-[#CFCFCF] text-[#0b1020] transition hover:bg-[#E7E7E7] hover:-translate-y-0.5">
+          Ver online
+        </a>
+      </footer>
+    </article>
+    <!---------------------------------------------------------------------------------------->
+    <article
+      class="grid grid-rows-[auto_1fr_auto] rounded-2xl overflow-hidden border border-[#1f2a44] bg-gradient-to-b from-[#0f1423] to-[#0c111d] transition
+                        hover:-translate-y-0.5 hover:shadow-[0_10px_28px_rgba(0,0,0,.35)] hover:border-[color:oklab(var(--tw-oklab))] -mt-6">
+      <!-- Thumb -->
+      <img src="./images/site-slider.png" alt="Prévia do site CityScape Slider"
+        class="w-full aspect-[16/9] object-cover">
+      <!-- Corpo -->
+      <div class="p-4 pt-3">
+        <h3 class="text-[1.05rem] mb-1 font-semibold text-[#cfcfcf]">CityScape Slider</h3>
+        <p class="text-sm text-[#cfcfcf] leading-relaxed mb-3">
+          Slider interativo apresentando destinos turísticos em destaque com animações suaves e navegação por
+          thumbnails.
+        </p>
+        <ul class="flex flex-wrap gap-2 mb-3 text-[#0b1020]">
+          <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">CSS</li>
+          <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">JavaScript</li>
+          <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">HTML5</li>
+        </ul>
+      </div>
+      <!-- Ações -->
+      <footer class="flex gap-2 border-t border-[#1f2a44] p-3">
+        <a href="https://city-scape-slider.vercel.app/" target="_blank" rel="noopener"
+          class="flex-1 text-center font-bold rounded-lg px-3 py-2 bg-[#CFCFCF] text-[#0b1020] transition hover:bg-[#E7E7E7] hover:-translate-y-0.5">
+          Ver online
+        </a>
+      </footer>
+    </article>
+
+    <!---------------------------------------------------------------------------------------->
+    <article
+      class="grid grid-rows-[auto_1fr_auto] rounded-2xl overflow-hidden border border-[#1f2a44] bg-gradient-to-b from-[#0f1423] to-[#0c111d] transition
+                        hover:-translate-y-0.5 hover:shadow-[0_10px_28px_rgba(0,0,0,.35)] hover:border-[color:oklab(var(--tw-oklab))] -mt-6">
+      <!-- Thumb -->
+      <img src="./images/app-cosmoquiz.png" alt="Prévia do App Cosmo Quiz" class="w-full aspect-[16/9] object-cover">
+      <!-- Corpo -->
+      <div class="p-4 pt-3">
+        <h3 class="text-[1.05rem] mb-1 font-semibold text-[#cfcfcf]">🌌Cosmo Quiz</h3>
+        <p class="text-sm text-[#cfcfcf] leading-relaxed mb-3">
+          Um aplicativo mobile desenvolvido com React Native e Expo que testa conhecimentos sobre astronomia e
+          curiosidades do universo, com sistema de pontuação e feedback dinâmico.
+        </p>
+        <ul class="flex flex-wrap gap-2 mb-3 text-[#0b1020]">
+          <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">React Native</li>
+          <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">Expo</li>
+          <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">JavaScript</li>
+        </ul>
+      </div>
+      <!-- Ações -->
+      <footer class="flex flex-col sm:flex-row gap-2 border-t border-[#1f2a44] p-3">
+        <a href="https://github.com/DevEduLP/cosmo-quiz" target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center whitespace-nowrap leading-none
+                      text-center font-bold rounded-lg px-3 py-2 text-sm bg-[#CFCFCF] text-[#0b1020]
+                      transition hover:bg-[#E7E7E7] hover:-translate-y-0.5">
+          Ver Código
         </a>
 
-    </section>
-
-    <section class="about">
-        <div class="about_text">
-            <h2 class="about_title">Sobre Mim:</h2>
-            <p class="paragraf-sobre">Dev front-end e músico: levo ritmo e precisão para as ideias. <br>Sou <span
-                    class="destaque">otimista</span> e busco sempre evoluir constantemente.<br>
-                Desenvolvimento profissional contínuo, orientado a resultados.
-            </p>
-        </div>
-        <img src="https://avatars.githubusercontent.com/u/101974785?v=4" alt="Minha Foto" class="about_photo">
-
-    </section>
-
-    <h2 class="title-projects">Alguns Projetos:</h2>
-
-    <section class="max-w-[1100px] mx-auto my-16 px-6 grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-[#a3e635\]">
-
-        <!-- CARD -->
-        <article class="grid grid-rows-[auto_1fr_auto] rounded-2xl overflow-hidden border border-[#1f2a44] bg-gradient-to-b from-[#0f1423] to-[#0c111d] transition
-                        hover:-translate-y-0.5 hover:shadow-[0_10px_28px_rgba(0,0,0,.35)] hover:border-[color:oklab(var(--tw-oklab))] -mt-6">
-          <!-- Thumb -->
-          <img src="./images/site-sagrav.png" alt="Prévia do projeto Sagrav Site"
-               class="w-full aspect-[16/9] object-cover">
-          <!-- Corpo -->
-          <div class="p-4 pt-3">
-            <h3 class="text-[1.05rem] mb-1 font-semibold text-[#cfcfcf]">Sagrav Metal - Site</h3>
-            <p class="text-sm text-[#cfcfcf] leading-relaxed mb-3">
-              Site da banda com e-commerce, ainda está em desenvolvimento.
-            </p>
-            <ul class="flex flex-wrap gap-2 mb-3 text-[#0b1020]">
-              <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">CSS</li>
-              <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">JavaScript</li>
-              <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">E-commerce</li>
-            </ul>
-          </div>
-          <!-- Ações -->
-          <footer class="flex gap-2 border-t border-[#1f2a44] p-3">
-            <a href="https://www.sagravmetal.com" target="_blank" rel="noopener"
-               class="flex-1 text-center font-bold rounded-lg px-3 py-2 bg-[#CFCFCF] text-[#0b1020] transition hover:bg-[#E7E7E7] hover:-translate-y-0.5">
-              Ver online
-            </a>
-          </footer>
-        </article>
-
-        <article class="grid grid-rows-[auto_1fr_auto] rounded-2xl overflow-hidden border border-[#1f2a44] bg-gradient-to-b from-[#0f1423] to-[#0c111d] transition
-                        hover:-translate-y-0.5 hover:shadow-[0_10px_28px_rgba(0,0,0,.35)] hover:border-[color:oklab(var(--tw-oklab))] -mt-6">
-          <!-- Thumb -->
-          <img src="./images/site-gere.png" alt="Prévia do projeto Gere Blues"
-               class="w-full aspect-[16/9] object-cover">
-          <!-- Corpo -->
-          <div class="p-4 pt-3">
-            <h3 class="text-[1.05rem] mb-1 font-semibold text-[#cfcfcf]">Gere Blues - Site</h3>
-            <p class="text-sm text-[#cfcfcf] leading-relaxed mb-3">
-              Site da banda de blues de Chapecó chamada Gere Blues, ainda está em desenvolvimento.
-            </p>
-            <ul class="flex flex-wrap gap-2 mb-3 text-[#0b1020]">
-              <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">JavaScript</li>
-              <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">CSS</li>
-              <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">HTML5</li>
-            </ul>
-          </div>
-          <!-- Ações -->
-          <footer class="flex gap-2 border-t border-[#1f2a44] p-3">
-            <a href="https://gereblues.com.br/" target="_blank" rel="noopener"
-               class="flex-1 text-center font-bold rounded-lg px-3 py-2 bg-[#CFCFCF] text-[#0b1020] transition hover:bg-[#E7E7E7] hover:-translate-y-0.5">
-              Ver online
-            </a>
-          </footer>
-        </article>
-
-        <article class="grid grid-rows-[auto_1fr_auto] rounded-2xl overflow-hidden border border-[#1f2a44] bg-gradient-to-b from-[#0f1423] to-[#0c111d] transition
-                        hover:-translate-y-0.5 hover:shadow-[0_10px_28px_rgba(0,0,0,.35)] hover:border-[color:oklab(var(--tw-oklab))] -mt-6">
-          <!-- Thumb -->
-          <img src="./images/site-ale.png" alt="Prévia do site Ale Castro Studio"
-               class="w-full aspect-[16/9] object-cover">
-          <!-- Corpo -->
-          <div class="p-4 pt-3">
-            <h3 class="text-[1.05rem] mb-1 font-semibold text-[#cfcfcf]">Ale Castro Studio</h3>
-            <p class="text-sm text-[#cfcfcf] leading-relaxed mb-3">
-              Site (Landing Page) para um estúdio de beleza.
-            </p>
-            <ul class="flex flex-wrap gap-2 mb-3 text-[#0b1020]">
-              <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">CSS</li>
-              <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">JavaScript</li>
-              <li class="text-xs font-semibold rounded-full px-2 py-1 bg-[#CFCFCF]">HTML5</li>
-            </ul>
-          </div>
-          <!-- Ações -->
-          <footer class="flex gap-2 border-t border-[#1f2a44] p-3">
-            <a href="https://alecastrostudio.com.br/" target="_blank" rel="noopener"
-               class="flex-1 text-center font-bold rounded-lg px-3 py-2 bg-[#CFCFCF] text-[#0b1020] transition hover:bg-[#E7E7E7] hover:-translate-y-0.5">
-              Ver online
-            </a>
-          </footer>
-        </article>
-
-        <div class="col-span-full flex flex-col sm:flex-row items-center justify-between gap-3 -mt-2 px-2">
-            <p class="text-[#CFCFCF] text-sm font-geist">
-              Curtiu? <span class="text-[#A3E635] font-geist">Mais projetos</span> estão no meu GitHub.
-            </p>
-            <a href="https://github.com/DevEduLP?tab=repositories" target="_blank" rel="noopener"
-               class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-[#1f2a44] text-[#CFCFCF]
-                      hover:border-[#A3E635] hover:text-[#A3E635] transition hover:-translate-y-0.5 font-geist">
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.94c.58.1.8-.25.8-.57v-2.1c-3.2.7-3.87-1.38-3.87-1.38-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.22 1.8 1.22 1.04 1.78 2.72 1.27 3.38.97.1-.76.41-1.27.74-1.56-2.55-.29-5.23-1.27-5.23-5.66 0-1.25.45-2.27 1.2-3.07-.12-.29-.52-1.46.12-3.05 0 0 .98-.31 3.2 1.17a11.1 11.1 0 0 1 5.82 0c2.22-1.48 3.2-1.17 3.2-1.17.64 1.59.24 2.76.12 3.05.75.8 1.2 1.82 1.2 3.07 0 4.4-2.69 5.36-5.25 5.65.42.36.79 1.07.79 2.16v3.2c0 .32.21.68.81.57A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
-              Ver projetos no GitHub
-            </a>
-          </div>
-      
-        <!-- Duplique o <article> e troque título/descrição/tags/links para os outros projetos -->
-    </section>
-    
-    <footer class="mt-20 bg-[#0f1423] border-t border-[#1f2a44] text-[#CFCFCF] font-geist">
-        <div class="max-w-[1100px] mx-auto px-6 py-4 flex items-center justify-between">
-            <!-- Brand -->
-            <div>
-              <h3 class="text-xl font-semibold">Eduardo Livi</h3>
-              <p class="text-sm text-[#8892a6] mt-1 inline-flex items-center gap-2">
-                <svg class="w-4 h-4" viewBox="0 0 48 48" fill="currentColor" aria-hidden="true">
-                  <path d="M24 10c-6 0-9.5 3-10.5 9 2-3 4.5-4.3 7.5-3.9 1.6.2 2.8 1 4.1 2.1 2 1.6 4.3 3.5 9.4 3.5 6 0 9.5-3 10.5-9-2 3-4.5 4.3-7.5 3.9-1.6-.2-2.8-1-4.1-2.1C31.4 11.9 29.1 10 24 10zm-13 12c-6 0-9.5 3-10.5 9 2-3 4.5-4.3 7.5-3.9 1.6.2 2.8 1 4.1 2.1 2 1.6 4.3 3.5 9.4 3.5 6 0 9.5-3 10.5-9-2 3-4.5 4.3-7.5 3.9-1.6-.2-2.8-1-4.1-2.1C18.4 25.9 16.1 24 11 24z"/>
-                </svg>
-                Este site foi criado com <span class="text-[#A3E635] font-semibold">Tailwind CSS</span>
-              </p>
-            </div>
-          
-            <!-- Social -->
-            <div class="flex items-center gap-4 text-lg">
-              <a href="https://github.com/DevEduLP" target="_blank" rel="noopener" aria-label="GitHub" class="hover:text-[#A3E635]"><i class="fa-brands fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/eduardo-livi-pedruzzi-4ab268235/" target="_blank" rel="noopener" aria-label="LinkedIn" class="hover:text-[#A3E635]"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="https://www.instagram.com/dudu_livip" target="_blank" rel="noopener" aria-label="Instagram" class="hover:text-[#A3E635]"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-          </div>
-          
-      
-        <!-- Bottom bar -->
-        <div class="border-t border-[#1f2a44]">
-          <div class="max-w-[1100px] mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-            <p class="text-xs text-[#8892a6]">© <span id="y"></span> Eduardo Livi. Todos os direitos reservados.</p>
-            <a href="#" class="text-xs hover:text-[#A3E635]">Voltar ao topo ↑</a>
-          </div>
-        </div>
+        <a href="https://youtube.com/shorts/N9laUwNp0Dg?si=ePYkSn7tPgAjE7RG" target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center whitespace-nowrap leading-none
+                      text-center font-bold rounded-lg px-3 py-2 text-sm bg-[#CFCFCF] text-[#0b1020]
+                      transition hover:bg-[#E7E7E7] hover:-translate-y-0.5">
+          Ver Demonstração
+        </a>
       </footer>
 
+    </article>
+
+    <div class="col-span-full flex flex-col sm:flex-row items-center justify-between gap-3 -mt-2 px-2">
+      <p class="text-[#CFCFCF] text-sm font-geist">
+        Curtiu? <span class="text-[#A3E635] font-geist">Mais projetos</span> estão no meu GitHub.
+      </p>
+      <a href="https://github.com/DevEduLP?tab=repositories" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-[#1f2a44] text-[#CFCFCF]
+                      hover:border-[#A3E635] hover:text-[#A3E635] transition hover:-translate-y-0.5 font-geist">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path
+            d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.94c.58.1.8-.25.8-.57v-2.1c-3.2.7-3.87-1.38-3.87-1.38-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.22 1.8 1.22 1.04 1.78 2.72 1.27 3.38.97.1-.76.41-1.27.74-1.56-2.55-.29-5.23-1.27-5.23-5.66 0-1.25.45-2.27 1.2-3.07-.12-.29-.52-1.46.12-3.05 0 0 .98-.31 3.2 1.17a11.1 11.1 0 0 1 5.82 0c2.22-1.48 3.2-1.17 3.2-1.17.64 1.59.24 2.76.12 3.05.75.8 1.2 1.82 1.2 3.07 0 4.4-2.69 5.36-5.25 5.65.42.36.79 1.07.79 2.16v3.2c0 .32.21.68.81.57A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z" />
+        </svg>
+        Ver projetos no GitHub
+      </a>
+    </div>
+
+    <!-- Duplique o <article> e troque título/descrição/tags/links para os outros projetos -->
+  </section>
+
+  <footer class="mt-20 bg-[#0f1423] border-t border-[#1f2a44] text-[#CFCFCF] font-geist">
+    <div class="max-w-[1100px] mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Brand -->
+      <div>
+        <h3 class="text-xl font-semibold">Eduardo Livi</h3>
+        <p class="text-sm text-[#8892a6] mt-1 inline-flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 48 48" fill="currentColor" aria-hidden="true">
+            <path
+              d="M24 10c-6 0-9.5 3-10.5 9 2-3 4.5-4.3 7.5-3.9 1.6.2 2.8 1 4.1 2.1 2 1.6 4.3 3.5 9.4 3.5 6 0 9.5-3 10.5-9-2 3-4.5 4.3-7.5 3.9-1.6-.2-2.8-1-4.1-2.1C31.4 11.9 29.1 10 24 10zm-13 12c-6 0-9.5 3-10.5 9 2-3 4.5-4.3 7.5-3.9 1.6.2 2.8 1 4.1 2.1 2 1.6 4.3 3.5 9.4 3.5 6 0 9.5-3 10.5-9-2 3-4.5 4.3-7.5 3.9-1.6-.2-2.8-1-4.1-2.1C18.4 25.9 16.1 24 11 24z" />
+          </svg>
+          Este site foi criado com <span class="text-[#A3E635] font-semibold">Tailwind CSS</span>
+        </p>
+      </div>
+
+      <!-- Social -->
+      <div class="flex items-center gap-4 text-lg">
+        <a href="https://github.com/DevEduLP" target="_blank" rel="noopener" aria-label="GitHub"
+          class="hover:text-[#A3E635]"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/eduardo-livi-pedruzzi-4ab268235/" target="_blank" rel="noopener"
+          aria-label="LinkedIn" class="hover:text-[#A3E635]"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/dudu_livip" target="_blank" rel="noopener" aria-label="Instagram"
+          class="hover:text-[#A3E635]"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+
+    <!-- Bottom bar -->
+    <div class="border-t border-[#1f2a44]">
+      <div class="max-w-[1100px] mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-xs text-[#8892a6]">© <span id="y"></span> Eduardo Livi. Todos os direitos reservados.</p>
+        <a href="#" class="text-xs hover:text-[#A3E635]">Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            geist: ['"Geist Mono"', 'monospace'],
-          }
-        }
-      }
-    }
-  </script>
+
 <script src="./scripts.js"></script>
 
 
 </html>
-
-
-
-
